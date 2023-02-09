@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;1,700&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+  background:black;
+ 
+}
+a{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background: darkblue;
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section{
+    padding: 50px 0;
+}
+.main-btn{
+    display: inline-block;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    padding: 10px 27px;
+    background-color: transparent;
+    border: .2px solid white;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+}
+.main-btn:hover{
+    background-color:white ;
+    border-color:black;
+    color: black;
+}
+h1{
+    font-size: 54px;
+    line-height: 68px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+}
+h1 span{
+    color: orangered;
+}
+h2{
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 19px;
+}
+h6{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+} p{
+    color: gray;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.subtitle{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    background-color: var(gradiennt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header_wrapper .navbar{
+    padding: 15px 0;
+    -webkit-transition: all .2s linear;
+    -o-webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    
+}
+.header_wrapper .navbar-toggler{
+    border: none;
+    color: white;
+    line-height: 2;
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item{
+    margin: 0 10px;
+}
+.header_wrapper .nav-item .nav-link{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(248, 239, 239);
+    display: inline-block;
+
+}
+.header_wrapper .nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:white;
+    transition: 0.3s;
+    bottom: 0;
+}
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover{
+    color:white;
+}
+.header-scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#00203FFF;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,0.5);
+    box-shadow: 0 4px 6px 0 rgba(12,0,46,0.5);
+}
+.header-scrolled .nav-item .nav-link.active,
+.header_scrolled .nav-item .nav-link:hover{
+    color: white;
+}
+.banner_wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 650px;
+    background: url('../images/bg3.jpg') no-repeat; 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px  100px ;
+    
+}
+
+.mh-skills {
+    background: linear-gradient( 90deg, navy,#00203FFF);
+}
+.mh-skills .mh-professional-skill{
+    padding-right: 60px;
+    color: white;
+}
+.mh-skills .mh-professional-skill h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.mh-professional-skills{
+    padding-left: 20%;
+    
+}
+
+.mh-professional-skills h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.mh-professional-progress li{
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 4rem;
+    float: none;
+    width: 38%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.mh-progress{
+    margin-bottom: 10px;
+    font-size: 900 1.14285/1 Cinzerl , cursive;
+    color: white;
+}
+.mh-progress .progressbar-text{
+    color: inherit !important;
+    font-family:sans-serif;
+    font-size: 2rem;
+}
+.progress.progress-line{
+    height: 10px;
+    margin-right: 60px;
+   
+}
+.progress.progress-line .progressbar-text{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 60px;
+    transform: translateY(-35%);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.mh-progress .mh-progress-circle{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    
+    
+}
+.mh-progress path:nth-child(1){
+    stroke: rgba(0,0,0,.7);
+}
+.mh-progress path:nth-child(2){
+    stroke: red !important;
+}
+
+.candidatos {
+    position: relative;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.candidatos .parcial{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.candidatos .parcial .info{
+   position: relative;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.candidatos .parcial .info .nome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 17px;
+    color:white;
+    font-weight: 600;
+    opacity: 0.9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.candidatos .parcial .info .percentage-num{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+.candidatos .parcial .progressBar{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: black;
+}
+.candidatos .parcial .percentagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:white;
+    -webkit-transition: 3s all;
+    -webkit-animation-name: animationprogress;
+    -webkit-animation-duration: 3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.precentual{
+    animation-name: animationprogress;
+}
+@keyframes animationprogress{
+    from{
+        width: 0;
+    }
+}
+
+
+.services{
+    background: linear-gradient( 90deg, navy,#00203FFF);
+
+}
+.services .card{
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.65s cubic-bezier(0.05,0.2,0.1,1);
+    box-shadow: 0.65s cubic-bezier(0.05,0.2,0.1,1);
+    height: 15rem;
+}
+.services .card h3{
+    color: navy;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.services .card i{
+    font-size: 1.5rem;
+}
+.services .card p{
+    color: black;
+   
+}
+
+.services .card:hover{
+    background: black;
+    box-shadow: 0px 2px 70px 0 rgb(253 71 102 / 5%);
+    transform: translateY(-5px);
+}
+.services .card:hover >* {
+    color: white;
+    
+}
+.services .card:hover p{
+    color: white;
+}
+.services .card:hover h3{
+    color: white;
+}
+.portfolio{
+    background: linear-gradient( 90deg, navy,#00203FFF);
+
+}
+
+.portfolio .card{
+    height: 100%;
+    min-height: 350px;
+    overflow: hidden;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 16px 4px black;
+}
+.portfolio .card span{
+    transition: background-position 4s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+.portfolio .card:hover span{
+    background-position: bottom center;
+}
+
+.portfolio .card a{
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
+
+.contact{
+    background:linear-gradient( 90deg, navy,#00203FFF);
+}
+.contact h1{
+    text-align: center;
+    font-size: 2rem;
+   
+}
+.contact .container-boxx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+.contact .container-boxx i{
+    padding: 1rem;
+    
+}
+.contact i:hover {
+   background-color: black;
+   border-radius: 5rem;
+}
+.intro {
+    background:linear-gradient( 90deg, navy,#00203FFF);  
+}
+.intro p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+

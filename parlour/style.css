@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+
+
+:root{
+    --Bisque:#FFE4C4;
+    --BurlyWood:#DEB887;
+    --gradient:linear-gradient(90deg, var(-- Bisque),var(-- BurlyWood));
+
+}
+
+*{
+    font-size: 'poppins','sans-serif';
+    margin: 0;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+     padding: 0;
+     box-sizing: border-box;
+
+
+}
+*::selection{
+    background-color: #ff0066;
+    color: white;
+}
+html{
+    font-size: 62.5%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    background: var(--gradient) ;
+    border-radius: 5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:0 0.5rem 1rem rgba(0,0, 0, 0.1);
+    transition: all 1s linear;
+
+}
+.btn:hover{
+    transform: scale(1.1);
+    color: white;
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
+    
+}
+section{
+    min-height: 100vh;
+    padding: 1rem 10%;
+    padding-top:  8.5rem;
+
+}
+header{
+    top: 0;
+    position: fixed;
+    left: 0;
+    padding:3rem ;
+    width: 100%;
+    background-color:white  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.1);
+    border: .1rem solid rgba(0,0, 0, 0.2);
+    z-index: 1000;
+
+}
+header .logo{
+    font-size: 4.5rem;
+    color: hsl(12, 100%, 50%);
+    text-decoration: none;
+    font-weight: bold;
+}
+header .navbar a {
+    text-decoration: none;
+    padding: 2rem ;
+    font-size: 2.2rem;
+    color:black ;
+    font-weight: bold;
+}
+header input{
+    display: none;
+
+}
+header label{
+    font-size: 3rem;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+} 
+.carousel #content{
+    padding-bottom: 70rem;
+}
+
+.carousel #content h1{
+    font-size: 8.5rem;
+    color:red;
+    font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: .1rem .5rem 1rem wheat rgba(0,0, 0, 0.2);
+}
+
+.carousel #content p{
+    font-size: 4rem;
+    color: whitesmoke;
+}
+.packages {
+    background-color: #ffe6e6 ;
+    padding: 0 0%;
+   
+    
+}
+
+.packages .content p{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    font-size: 4rem;
+    white-space: pre;
+    text-align: center;
+    font-weight:normal;
+    color: black;
+    padding: 6rem;
+
+}
+.packages .container-fluid  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.packages .container-fluid .row #box{
+    padding: 2rem 2rem;
+    height: 55rem;
+    width: 50rem;
+    margin: 2rem;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.2);
+    border: .1rem solid rgba(0,0, 0, 0.1);
+    background-color: white;
+    
+}
+
+.packages .container-fluid .row #box h2{
+    font-size: 3.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+.packages .container-fluid .row #box p{
+    color: gray;
+    padding: .1rem;
+    font-size: 2rem;
+}
+.packages .container-fluid .row #box .price{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem;
+    
+
+}
+.packages .container-fluid  .row #box .img-fluid{
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    
+}
+.Different h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    padding: 2rem;
+    text-decoration: underline ;
+    
+
+}
+.Different h2 {
+    text-align: start;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+    color: red;
+    font-weight: bold;
+    
+    
+    
+}
+.Different h2 img{
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
+    
+}
+
+.Different .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+} 
+ #our-works{
+    background-color:#ffe6e6;
+    ;
+}
+#our-works h1{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    font-size: 6rem;
+    color: black;
+    font-weight: bold;
+    padding: 4rem;
+
+
+}
+   #our-works .row {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   } 
+
+   .content{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    font-size: 6rem;
+    color: black;
+    font-weight: lighter;
+    padding: 4rem;
+   }
+   
+   #our-works #icons #box .img-fluid{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 8rem;
+    width: 8rem;
+   }
+   #discount{
+    background-color: white;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(255,255,255,.5)), url(../images/discountbg.jpg), no-repeat;
+    background-size: cover;
+    object-fit: cover;
+   
+   
+   }
+   #discount h1{
+    font-size: 8rem;
+    text-shadow:1rem .5rem 1rem black;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    color: white;
+    padding: 12rem;
+   }
+   #discount p{
+    font-size: 3rem;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    white-space: pre;
+    color: white;
+    text-shadow:1rem .5rem 1rem red;
+    line-height: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   
+   #appointment{
+    background-color: white;
+    background:linear-gradient(rgba(255,255,255,30),rgba(255,255,255,.8)), url(../images/f1.jpg), no-repeat;
+    background-size: cover;
+    object-fit: cover;
+   
+   }
+   #appointment h1{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    font-size: 6rem;
+    color: black;
+    font-weight: bold;
+    padding: 4rem;
+   }
+#appointment p{
+    font-size: 3rem;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    white-space: pre;
+    color:black;
+    text-shadow:1rem .5rem 1rem lavender;
+    line-height: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   #appointment form{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    padding-top: 5rem;
+    
+    
+    
+    }
+    #appointment form input[type="text"]{
+        padding:0 2rem;
+        font-size: 1.7rem;
+        width: 100%;
+        text-transform: none;
+        margin: 2rem ;
+        padding:.5rem ;
+        border-radius: 5rem;
+        height: 5.5rem;
+        max-width: 50rem;
+        border: .5rem solid red;
+        color: white;
+        font-weight: bold;
+        
+    }
+    #appointment form input[type="number"]{
+        padding: 0 2rem;
+        font-size: 1.7rem;
+        width: 100%;
+        text-transform: none;
+        margin: 2rem ;
+        padding:.5rem ;
+        border-radius: 5rem;
+        height: 5.5rem;
+        max-width: 50rem;
+        border: .5rem solid red;
+        color: white;
+        font-weight: bold;
+        
+    }
+    #appointment form input[type="text"]::placeholder{
+        color: black;
+        text-transform: capitalize;
+    }
+    #appointment form input[type="submit"]{
+        color: white;
+        width: 20rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0 2rem;
+        width: 100%;
+        text-transform: none;
+        margin: 2rem ;
+        padding:.5rem ;
+        background-color: red;
+        height: 5.5rem;
+        max-width: 50rem;
+       
+    }
+    #appointment form input[type="submit"]:hover{
+        background-color: #FFE4C4;
+        color: black;
+    }
+  #model h1{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    font-size: 6rem;
+    color: black;
+    text-shadow: 1rem .5rem 2rem purple;
+    font-weight: bold;
+    padding: 4rem;
+   
+  }
+
+#model .row #box{
+    padding: 2rem;
+    
+}
+#model .row #box:hover{
+    transform: scale(1.2);
+}
+
+.footer{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+gap:3rem;
+
+}
+.footer .box h3{
+color: black;
+font-size: 4.5rem;
+padding-bottom: 2rem;
+text-align: center;
+
+}
+.footer .box a{
+color: black;
+font-size: 1.5rem;
+padding-bottom: 1rem;
+display: block;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+}
+.footer .box i{
+color: red;
+padding-right: .5rem;
+transition: .2s linear;
+
+
+}
+.footer .box a:hover i{
+padding-right: 2rem;
+}
+
+.creadit{
+text-align: center;
+padding-top: 2rem;
+margin-top: 3rem;
+border-top: .1rem solid black;
+font-size: 3rem;
+color: black;
+}
+.creadit span{
+color:red;
+font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 60.5%;
+    }
+   
+    .carousel #content{
+        padding-bottom:1rem;
+    }
+    .packages {
+        background-color: #ffe6e6 ;
+        padding: 0 0%;
+        
+    }
+    section{
+        padding:0 3% ;
+        padding-top:7.5rem ;
+    }
+
+    
+    .packages .content p{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        font-size: 2rem;
+        padding-left: 1rem;
+    
+    }
+    .Different .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+    } 
+}
+
+    @media (max-width:991px){
+        html{
+            font-size: 55.5%;
+        }
+        .Different .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 2.5rem;
+        } 
+    }
+@media (max-width:768px){
+    html{
+        font-size: 55.5%;
+    }
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #DEB887;
+        box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.1);
+        border-top: .1rem solid rgba(0,0, 0, 0.2);
+        padding: 3rem 3rem;
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    header .navbar a{
+        display: block;
+        margin: 1rem 0;
+        font-size: 2rem;
+        color: black;
+       
+    }
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }
+    .carousel #content{
+        padding: bottom -90rem;;
+    }
+        
+        .carousel #content h1{
+            font-size: 4.5rem;
+            color:red;
+            
+            
+        }
+        
+        .carousel #content p{
+            font-size: 2rem;
+            color:whitesmoke;
+            font-weight: bold;
+        }
+        .packages {
+            background-color: #ffe6e6 ;
+            
+            
+        }
+        .packages .content p{
+            display: flex;
+            align-items: center;
+            justify-content:center ;
+            font-size: 2rem;
+            padding-left: 1rem;
+        
+        }
+        .Different h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 5rem;
+            padding: 1rem;
+            
+        
+        }
+        .Different h2 {
+            text-align: center;
+            font-size: 3.5rem;
+            padding-bottom: 2rem;
+            color: black;
+            
+        }
+        .Different h2 img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        
+        .Different .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 2rem;
+        } 
+        #discount h1{
+            font-size: 4rem;
+            
+           }
+           #discount p{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            
+           }
+           #appointment h1{
+            
+            font-size: 4rem;
+            color: black;
+            
+           }
+        #appointment p{
+            font-size: 1.5rem;
+            
+           }
+           
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding: 1rem 5%;
+        padding-top: 8.5rem;
+        
+            
+    }
+    
+}

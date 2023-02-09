@@ -1,0 +1,1115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;1,700&family=Roboto:wght@300;400&display=swap');
+
+
+:root{
+    --black:#272D3B;
+    --pink:#ef5777;
+    --coral:#F7817F;
+    --blue:#000099;
+    --transparent-white:#e995954d;
+    --transparent-black:#d9d9d9;
+    --gradient:linear-gradient( 90deg, white, rgb(223, 188, 223));
+    --border:2rem solid white;
+    --box-shadow:0 .5rem 5rem rgba(0,0,0,.1);
+    --text-shadow:1rem .5rem 1rem;
+    --gradient2:linear-gradient( 90deg, #ED176F, #F7817F);
+    --gradient3:linear-gradient( 90deg, purple, white);
+    
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    border: none; border: border-box;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+   
+}
+*::selection{
+    background: var(--Red);
+    color:var(--coral);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+section{
+    padding: 3rem 9%;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: #272D3B;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-shadow: 1rem .5rem 1rem white;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: var(--border);
+    background: var(--transparent-white);
+    color: black;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+.btn:hover{
+    background: black;
+    color: white;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    margin: auto;
+    background-color:  transparent white;
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+header .navbar a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left:  2rem;
+    color: var(--black);
+    font-weight: bolder;
+   
+
+}
+header .navbar a:hover{
+    color: #000099;
+}
+header .logo{
+    font-size: 3rem;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bolder;
+}
+ #menu-btn{
+
+    font-size: 3rem;
+    color:black ;
+    display: none;
+}
+
+.home{
+    background: var(--gradient);
+   
+}
+.home .row{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.home .row .image{
+    flex: 1 1 10rem;
+}
+.home .image img{
+    height:70rem;
+    width: 70rem;
+}
+.home .row .content{
+   flex: 1 1 10rem;
+    padding-left: 10rem;
+}
+.home .content h6{
+    font-size: 2.5rem;
+    color: black;
+    
+    font-style: italic;
+}
+.home .content h1{
+    font-size: 6rem;
+    color: #000099;
+    font-style: italic;
+    
+}
+
+.home .content a{
+    border: none;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5rem;
+    text-align: center;
+}
+.home .content a:hover{
+    border: none;
+    color: black;
+    background-color: white;
+}
+/* 
+.about{
+        background-color: slateblue	;
+    }
+    .about .box-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .about .box-container .box{
+        flex:1 1 20rem;
+    }
+.about .box-container .box img{
+    height: 60rem;
+    width: 90rem;
+}
+
+.about .box-container .content{
+    padding-bottom: 10rem;
+    flex:1 1 60rem;
+    
+}
+.about .box-container .content h2{
+    font-size: 5rem;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about .box-container .content p{
+    color: navy;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.about .box-container .content h3{
+    white-space: pre;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.about .box-container .content h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+*/
+.mh-skills {
+    background: var(--gradient);
+}
+
+.mh-skills .mh-professional-skill{
+    padding-right: 60px;
+    color: black;
+}
+.mh-skills .mh-professional-skill h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.mh-professional-skills{
+    padding-left: 20%;
+}
+
+.mh-professional-skills h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.mh-professional-progress li{
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 4rem;
+    float: none;
+    width: 38%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.mh-progress{
+    margin-bottom: 10px;
+    font-size: 900 1.14285/1 Cinzerl , cursive;
+    color: black;
+}
+.mh-progress .progressbar-text{
+    color: inherit !important;
+    font-family:sans-serif;
+    font-size: 2rem;
+}
+.progress.progress-line{
+    height: 10px;
+    margin-right: 60px;
+}
+.progress.progress-line .progressbar-text{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 60px;
+    transform: translateY(-35%);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.mh-progress .mh-progress-circle{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.mh-progress path:nth-child(1){
+    stroke: rgba(0,0,0,.7);
+}
+.mh-progress path:nth-child(2){
+    stroke: red !important;
+}
+
+.candidatos {
+    position: relative;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.candidatos .parcial{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.candidatos .parcial .info{
+   position: relative;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.candidatos .parcial .info .nome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 17px;
+    color:black;
+    font-weight: 600;
+    opacity: 0.9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.candidatos .parcial .info .percentage-num{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+.candidatos .parcial .progressBar{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+}
+.candidatos .parcial .percentagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:yellow;
+    -webkit-transition: 3s all;
+    -webkit-animation-name: animationprogress;
+    -webkit-animation-duration: 3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.precentual{
+    animation-name: animationprogress;
+}
+@keyframes animationprogress{
+    from{
+        width: 0;
+    }
+}
+
+
+.project{
+    background: var(--gradient);
+}
+.project .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.project h1{
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ .project .box-container .box{
+    height: 60rem;
+    width: 35rem;
+    margin: 2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background:white;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+.project .box-container .box h2{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    background:black;
+    padding: 1rem;
+}
+.project .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem;
+}
+.project .box-container .box h3{
+    position: absolute;
+    top:100%;
+    left: 50%;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.project .box-container .box:hover h3{
+    top: 50%;
+    opacity: 1;
+    transition: .2s linear;
+}
+.project .box-container .box a{
+    position: absolute;
+    top:100%;
+    left: 50%;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.project .box-container .box:hover a{
+    top: 50%;
+    opacity: 1;
+    transition: .2s linear;
+    border: none;
+    font-size: 1.5rem;
+    background:black;
+    color: white;
+}
+
+.project .box-container .box::before
+{
+    content: '';
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(59, 51, 63, 0.596);
+    transition: .2s linear;
+}
+.project .box-container .box:hover::before{
+    top: 0;
+ 
+ }
+ .project .box-container .box:hover{
+    transform: scale(1.1);
+ }
+
+.features{
+    background: var(--gradient);
+}
+
+.features h1{
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.features .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.features .box-container .box{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    flex: 1 1 45rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.features .box-container .box i{
+    font-size: 5rem;
+    color: var(--Red);
+    padding: 1rem;
+}
+.features .box-container .box h3{
+    font-size: 2.4rem;
+    color: var(--black);
+    padding: 1rem;
+}
+.features .box-container .box p{
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem;
+}
+.features .box-container .box:hover{
+    background: purple;
+}
+.features .box-container .box:hover >* {
+    color: white;
+}
+.about{
+    background: var(--gradient);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about h1{
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.about .image{
+    flex: 1 1 40rem;
+}
+.about .image img{
+   width: 100%;
+}
+.about .content{
+    flex: 1 1 20rem;
+
+}
+.about .content h2{
+    font-size: 3.4rem;
+    color: var(--black);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 4px solid purple;
+}
+.about .content p{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.usages .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.usages .box-container .box{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(230, 230, 255);
+    text-align: center;
+    flex: 1 1 45rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.usages .box-container .box i{
+    font-size: 5rem;
+    color: var(--blue);
+    padding: 1rem;
+}
+.usages .box-container .box h3{
+    font-size: 2.4rem;
+    color: var(--black);
+    padding: 1rem;
+}
+.usages .box-container .box p{
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem;
+}
+.usages .box-container .box:hover{
+    background: var(--blue);
+}
+.usages .box-container .box:hover >* {
+    color: white;
+}
+.pricing{
+    background: var(--gradient);
+}
+.pricing .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.pricing .box-container .box{
+    flex: 1 1 50rem;
+    padding: 2rem 0;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 .5 1rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.2);
+    background-color: white;
+}
+.pricing .box-container .box ul li{
+    list-style: none;
+    font-size: 1.7rem;
+    color: gray;
+    padding: .7rem 0;
+}
+.pricing .box-container .box p {
+    padding: 2rem 0;
+    border-bottom: .1rem solid var(--Red);
+    font-size: 1.5rem;
+}
+.pricing .box-container .box .price{
+    font-size: 5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+.pricing .box-container .box .price span{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.pricing .box-container .box h3{
+    color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: var(--gradient);
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.pricing .box-container .box .btn{
+    margin-top: 2rem;
+    background-color: purple;
+    color: white;
+}
+
+
+.container-boxx .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container-boxx .row i{
+    padding: 1rem 1rem;
+    font-size: 4rem;
+    color: black;
+  text-align: center;
+  
+   
+}
+.container-boxx .row #creadit{
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-top: .3rem solid black;
+}
+.container-boxx .row #creadit span{
+    color: purple;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ @media(max-width:1400px){
+    html{
+        font-size: 60.5%; 
+    }
+    section{
+        padding: 2rem 29%;
+    }
+    .home{
+        padding-bottom: 100rem;
+    }
+    .home .content{
+        padding-bottom: 0;
+        padding-left: 0rem;
+    }
+    .home .content h6{
+        font-size: 2rem;
+        
+    }
+    .home .content h1{
+        font-size:4.5rem;
+        
+        
+    }
+    .home .content h1 span{
+        color: white;
+    }
+    .home .content a{
+
+        border-radius: 4rem;
+        
+    }
+    .mh-skills .mh-professional-skill{
+        padding-right: 2rem;
+        
+    }
+    .mh-skills .mh-professional-skill h3{
+        font-size: 20px;
+        
+        padding-top: 50px;
+    }
+    
+    .mh-professional-skills{
+        padding-left: 0%;
+    }
+    
+    .mh-professional-skills h3{
+        font-size: 20px;
+       margin-left: 7rem;
+       padding-top: 50px;
+        
+    }
+    
+    .mh-professional-progress li{
+        font-size: 8px;
+        padding-left: 4rem;
+        width: 48%;
+        margin-bottom: 20px;
+        color: white;
+        
+    }
+    .candidatos {
+        margin-bottom: 15px;
+    }
+    
+    .candidatos .parcial .info .nome{
+       
+        font-size: 10px;
+        color: white;
+        
+    }
+    
+    
+    
+    
+   
+    .features h1{
+        font-size: 4rem;
+    }
+
+    .features .box-container .box{
+       
+        flex: 1 1 30rem;
+       
+    }
+    .features .box-container .box i{
+        font-size: 4rem;
+       
+    }
+    .features .box-container .box h3{
+        font-size: 2rem;
+        
+    }
+    .features .box-container .box p{
+        font-size: 1rem;
+        
+    }
+    
+    
+    
+    
+    
+}
+
+*/
+@media(max-width:1400px){
+    html{
+        font-size: 62.5%; 
+    }
+   
+    .home .image img {
+        height: 60rem;
+        width: 60rem;
+     
+    }
+
+    .home .content h6{
+        font-size: 1.8rem;
+        
+    }
+    .home .content h1{
+        font-size:4.5rem;
+        
+        
+    }
+    
+    .home .content a{
+
+        border-radius: 3.8rem;
+        
+    }
+    
+    .project h1{
+        font-size: 3.5rem;
+    }
+    .features h1{
+        font-size: 3.5rem;
+    }
+    .features .box-container .box{
+       
+        flex: 1 1 30rem;
+       
+    }
+    .features .box-container .box i{
+        font-size: 4rem;
+       
+    }
+    .features .box-container .box h3{
+        font-size: 2rem;
+        
+    }
+    .features .box-container .box p{
+        font-size: 1rem;
+        
+    }
+    .about h1{
+        font-size: 3.5rem;
+       
+    }
+   
+    .about .content h2{
+        font-size: 2.5rem;
+        border-bottom: 2px solid purple;
+      
+        
+    }
+    .about .content p{
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    
+    
+}
+
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 62.5%; 
+    }
+    section{
+        padding: 2rem 9%;
+    }
+    .home {
+        margin-top: 10rem;
+    }
+    .home .image {
+        height: 20rem;
+        width: 30rem;
+       margin-bottom: 20rem;
+    }
+
+    .home .content h6{
+        font-size: 1.8rem;
+        
+    }
+    .home .content h1{
+        font-size:4.5rem;
+        
+        
+    }
+    
+    .home .content a{
+
+        border-radius: 3.8rem;
+        
+    }
+    .project h1{
+        font-size: 3rem;
+    }
+    .features h1{
+        font-size: 3rem;
+    }
+    .features .box-container .box{
+       
+        flex: 1 1 30rem;
+       
+    }
+    .features .box-container .box i{
+        font-size: 4rem;
+       
+    }
+    .features .box-container .box h3{
+        font-size: 2rem;
+        
+    }
+    .features .box-container .box p{
+        font-size: 1rem;
+        
+    }
+    .about h1{
+        font-size: 3rem;
+       
+    }
+   
+    .about .content h2{
+        font-size: 2rem;
+        border-bottom: 2px solid purple;
+      
+        
+    }
+    .about .content p{
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    
+    
+   
+    .home .image img{
+        height:50rem;
+        width: 50rem;
+    }
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%; 
+    }
+   
+   
+    
+    .home .image img{
+        height:40rem;
+        width: 40rem;
+    }
+     
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+    html{
+        font-size: 55%; 
+    }
+    #menu-btn{
+        display: inline-block;
+        transition: all .2s linear;
+        
+        
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+     
+    header .navbar a{
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:whitesmoke;
+        text-shadow: .1rem .5rem 1rem black;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        
+    }
+    header .navbar a:hover{
+        padding-right: 2rem;
+    }
+    
+    .home .content{
+       
+        text-align: start;
+    }
+    .home .content h6{
+        font-size: 2.5rem;
+        text-shadow: #000099;
+        color: black;
+        
+    }
+    .home .content h1{
+        font-size:3rem;
+        color:navy;
+        text-shadow: black;
+        
+        
+    }
+    
+    .home .content a{
+
+        border-radius: 4rem;
+        
+    }
+    .mh-skills .mh-professional-skill{
+        padding-right: 30px;
+       
+        
+    }
+    .mh-skills .mh-professional-skill h3{
+        font-size: 20px;
+        padding-top: 50px;
+    }
+    
+    
+    .mh-professional-skills h3{
+        font-size: 20px;
+       margin-left: 2rem;
+       
+    }
+    
+    .mh-professional-progress li{
+        font-size: 7px;
+        padding-left: 2rem;
+        
+        
+    }
+
+    
+    .home .row .image{
+       height: 20rem;
+       width: 20rem;
+    }
+    .project h1{
+        font-size: 2.5rem;
+    }
+    .features h1{
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%; 
+    }
+    section{
+        padding: 2rem 5%;
+    }
+   
+    .home .content{
+        text-align: center;
+        
+    }
+    .home .content h6{
+        font-size: 2rem;
+       
+        
+    }
+    .home .content h1{
+        font-size:2rem;
+        
+        
+    }
+    .home .row .image{
+       
+        display: none;
+     }
+    .mh-skills .mh-professional-skill{
+        padding-right: 30px;
+       
+        
+    }
+    .mh-skills .mh-professional-skill h3{
+        font-size: 20px;
+        padding-top: 50px;
+    }
+    
+    
+    .mh-professional-skills h3{
+        font-size: 15px;
+        padding-left: 1rem;
+       
+       
+    }
+    
+    .mh-professional-progress li{
+        font-size: 7px;
+        padding-left: 1rem;
+        
+        
+    }
+    .project h1{
+        font-size: 2rem;
+    }
+    .features h1{
+        font-size: 2rem;
+    }
+    .about h1{
+        font-size: 2rem;
+       
+    }
+   
+    .about .content h2{
+        font-size: 1.5rem;
+        border-bottom: 2px solid purple;
+      
+        
+    }
+    .about .content p{
+        font-size: .9rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+}
